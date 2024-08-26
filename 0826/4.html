@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Blog</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: black;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            margin: 20px;
+        }
+        article {
+            flex: 3;
+            padding: 20px;
+            background: #f4f4f4;
+            margin-right: 20px;
+        }
+        aside {
+            flex: 1;
+            padding: 20px;
+            background: #e2e2e2;
+        }
+        footer {
+            background: black;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Simple Blog(헤더)</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home(네브 아이템)</a>
+        <a href="#">About(네브 아이템)</a>
+        <a href="#">Contact(네브 아이템)</a>
+    </nav>
+
+    <main>
+        메인
+        <article>
+            아티클
+            <h2>Blog Post Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel ultricies tortor. Integer non feugiat ligula. Aliquam erat volutpat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel ultricies tortor. Integer non feugiat ligula. Aliquam erat volutpat.</p>
+        </article>
+
+        <aside>
+            에이사이드
+            <h2>About Me</h2>
+            <p>Hi, I'm a blogger who loves to write about tech and lifestyle.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Simple Blog(푸터)</p>
+    </footer>
+</body>
+</html>

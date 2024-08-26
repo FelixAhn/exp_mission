@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model 이해하기</title>
+    <style>
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+            background-color: darkgoldenrod;
+            margin: 20px; /* 박스 바깥의 여백 */
+            padding: 36px; /* 박스 안의 여백 */
+            border: 5px solid black; /* 테두리 */
+        }
+        .boxbox {
+            background-color: blue;
+            width: 100%; /* 부모 요소의 패딩 크기에 따라 조정됨 */
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="boxbox"></div>
+    </div>
+</body>
+</html>
