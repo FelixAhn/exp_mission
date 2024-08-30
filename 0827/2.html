@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        header{
+            width: 100%;
+            height: 120px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            line-height: 120px;
+        }
+
+        .main{
+            background-color: rgb(49, 48, 48);
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            line-height: 120px;
+        }
+
+        #footer {
+            background-color: rgb(76, 75, 75);
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            line-height: 120px;
+        }
+
+        .virtual {
+            background-color: rgb(49, 48, 48);
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            line-height: 120px;
+            margin: 12px 0;
+        }
+
+        .hover-example:hover {
+            background-color: darkgray;
+            color: black;
+        }
+
+        input[type="checkbox"]:checked + label {
+            color: aqua;
+            font-weight: bold;
+        }
+
+        input:enabled {
+            background-color: wheat;
+        }
+
+        input:disabled {
+            background-color: lightgray;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <header>태그선택자 : 태그 선택자는 HTML의 특정 태그 이름을 기반으로 스타일을 적용합니다. 예를 들어, HTML 문서의 같은 모든 요소에 같은 스타일을 적용하고 싶을 때 사용</header>
+
+    <div class="main">
+        <p>클래스 선택자 : 클래스 선택자는 . (점) 기호 뒤에 클래스 이름을 사용하여 특정 클래스가 적용된 요소에 스타일을 적용, 여러 요소에 같은 스타일을 적용하고 싶을 때 유용</p>
+    </div>
+
+    <div class="hover-example virtual">
+        hover 선택자 : 사용자가 요소 위에 마우스를 올렸을 때 스타일이 변경
+    </div>
+
+    <div class="virtual">
+        <input type="checkbox" id="check" />
+        <label for="check">checked 선택자 : 체크박스가 선택되었을 때 이 텍스트의 스타일이 변경</label>
+    </div>
+
+    <div class="virtual">
+        <input type="text" value="enabled 상태" style="width: 50%; height: 64px;"/>
+    </div>
+
+    <div class="virtual">
+        <input type="text" value="disabled 상태" disabled style="width: 50%; height: 64px;"/>
+    </div>
+
+    <footer id="footer">
+        ID 선택자 : ID 선택자는 # (샵) 기호 뒤에 ID 이름을 사용하여 특정 ID를 가진 요소에 스타일을 적용 ID는 HTML 문서에서 고유해야 하며, 따라서 하나의 요소에만 적용
+    </footer>
+</body>
+</html>
